@@ -1,0 +1,176 @@
+@import "_variables.scss";
+
+:root {
+  font-size: $default-font-size;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 10px;
+}
+.car {
+  width: 90%;
+  max-width: 368px;
+  margin: auto;
+  /*border: 2px solid red;*/
+}
+.sedan {
+  background-color: $orange;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 50px;
+  & button {
+    color: $orange;
+  }
+}
+.suv {
+  background-color: $dark-cyan;
+  & button {
+    color: $dark-cyan;
+  }
+}
+.luxury {
+  background-color: $very-dark-cyan;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  & button {
+    color: $very-dark-cyan;
+  }
+}
+.svg {
+  margin: 25px auto;
+  width: 90%;
+}
+.text {
+  width: 90%;
+  margin: 0 auto;
+  color: $white;
+  padding-bottom: 10px;
+
+  & h2 {
+    text-align: left;
+
+    text-transform: uppercase;
+    font-family: $BSD;
+    font-size: 2.5rem;
+  }
+
+  & P {
+    margin-top: 1em;
+    text-align: left;
+    font-size: 0.9rem;
+    width: 80%;
+    font-family: $lexend;
+    line-height: 2;
+  }
+  & button {
+    margin: 20px auto 30px;
+    position: absolute;
+  }
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid $white;
+  width: 130px;
+  margin-left: 16px;
+  font-family: $lexend;
+  letter-spacing: 0.2px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  background-color: $white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  z-index: -1;
+  top: 0%;
+  left: 0;
+  transform: translateX(0);
+  transition: all 0.2s ease-in;
+}
+.btn:hover:before {
+  transform: translateX(-130px);
+  transition: all 0.2s ease-in;
+}
+.btn > :not(:hover):before {
+  transform: translateX(-130px);
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  color: $white;
+}
+
+@media (min-width: 767px) {
+  .container {
+    flex-direction: row;
+    margin: 50px auto 0;
+    width: 90%;
+    & .sedan {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+      margin-top: 0;
+    }
+    & .luxury {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+    }
+
+    & .car {
+      height: 390px;
+      flex: 1;
+    }
+    .text {
+      height: 190px;
+      & h2 {
+        font-size: 2rem;
+      }
+
+      & P {
+        font-size: 0.8rem;
+      }
+    }
+    & .btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1226px) {
+  .container {
+    margin: 50px auto;
+    width: 1104px;
+    .car {
+      margin: 0;
+      .text {
+        & h2 {
+          font-size: 2.5rem;
+        }
+
+        & P {
+          font-size: 0.8rem;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
