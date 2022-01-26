@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-I challenged myself to give an smooth animation to the buttons when hovered. To do so I used pseudo-elemets and animated them through a class (btn), as pseudo-elements are not compatible with the hover pseudo-class.
+I challenged myself to give a smooth animation to the buttons when hovered. To do so I used pseudo-elemets and animated them through a class (btn), as pseudo-elements are not compatible with the hover pseudo-class.
 
 This the HTML:
 
@@ -60,7 +60,7 @@ This selector targets the  pseudo-element when any element with the class btn is
 }
 ```
 
-I add a transition porperty to make is move to the left smoothly
+I added a transition porperty to make it move to the left, the transition property is to make the movement smooth.
 
 This selector targets the pseudo-element and allows me to style it. I gave it a z-indez of -1 so the text can be seen.
 
@@ -79,7 +79,7 @@ This selector targets the pseudo-element and allows me to style it. I gave it a 
 }
 ```
 
-The last 2 properties are here to re-introduce the white bacground in the button when hovered out to make the animation smoother.
+The last 2 properties are here to re-introduce the white bacground in the button when hovered out to make the animation smoother. translate x is now set to 0 to bring back the pseudo-element to its original place. The transition property is to make the movement smooth.
 
 ### Continued development
 
