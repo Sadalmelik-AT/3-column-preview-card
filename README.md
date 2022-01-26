@@ -22,12 +22,12 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
-  -personal extra: smotthly animate the buttons when hovered
+- Personal extra: smotthly animate the buttons when hovered
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution repository: [GitHub](https://github.com/Sadalmelik-AT/3-column-preview-card)
+- Live Site URL: [Live site](https://sadalmelik-at.github.io/3-column-preview-card/)
 
 ## My process
 
