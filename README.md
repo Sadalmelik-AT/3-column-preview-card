@@ -93,5 +93,5 @@ However there is always room for improvement therefore I will continue on doing 
 
 ## Author
 
-- Frontend Mentor - [@PyZziie](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@PyZziie](https://www.frontendmentor.io/profile/PyZziie)
 - Twitter - [@sadalmel1k](https://twitter.com/Sadalmel1k)
