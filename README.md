@@ -51,7 +51,7 @@ This the HTML:
 
 This is the CSS:
 
-This selector targets the my pseudo-element when any element with the class btn is hovered
+This selector targets the  pseudo-element when any element with the class btn is hovered
 
 ```css
 .btn:hover:before {
